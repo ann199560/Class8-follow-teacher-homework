@@ -1,4 +1,16 @@
 // 標籤基本樣式
+
 body{
-    
+    letter-spacing: 0,02em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
 }

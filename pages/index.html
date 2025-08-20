@@ -5,50 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+      <main>
+        <!-- 主視覺 -->
+        <section class="banner">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <h8 class="fs-lg-8 fs-7 fw-bold text-primary bg-primary-10 rounded-1 p-2 d-inline-block mb-4">
+                  ZOBAA 旅行推薦平台
+                </h8>
+                <h1 class="fs-4 fs-lg-1 fw-bold text-primary">
+                  <span class="d-block d-lg-inline">用旅行，</span>
+                  <span>收藏世界的樣子</span>
+                </h1>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </section>
+        <!-- 專屬推薦 -->
+        <section class="recommend py-11 mb-8">
+          <div class="container text-white d-lg-flex justify-content-lg-between align-items-lg-center mb-11">
+            <h4 class="fs-lg-1 mb-8">你的<br>專屬推薦</h4>
+            <div>
+              <p class="mb-4 fs-9 fs-lg-7">來看我們的精選推薦行程，滿意度高達 99.2% <br> 給自己一個難忘的旅遊行程吧！</p>
+              <a href="#" class="fs-9 fs-lg-8">查看全部行程 <span class="material-icons-outlined align-bottom ms-2">   
+                arrow_forward</span>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+          <div class="container d-flex gap-8 overflow-x-auto">
+            <div class="card bg-dark text-white rounded-6 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+                <img src="/assets/images/index/recommend.png" class="card-img h-100" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                      <h5 class="fs-lg-2 mb-2">峇里島渡假漫遊</h5>
+                      <p class="fs-9 fs-lg-8 mb-8">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                      <button type="button" class="btn btn-light cta p-7 rounded-pill d-flex justify-content-between d-lg-flex">訂購行程<span class="material-icons-outlined align-bottom ms-2">   
+                arrow_forward</span></button>
+                  </div>
+              </div>
+            <div class="card bg-dark text-white rounded-6 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+                <img src="/assets/images/index/recommend-1.png" class="card-img h-100" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                      <h5 class="fs-lg-2 mb-2">峇里島渡假漫遊</h5>
+                      <p class="fs-9 fs-lg-8 mb-8">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                      <button type="button" class="btn btn-light cta p-7 rounded-pill d-flex justify-content-between d-lg-flex">訂購行程<span class="material-icons-outlined align-bottom ms-2"> arrow_forward</span></button>
+                  </div>
+              </div>
+            <div class="card bg-dark text-white rounded-6 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+                <img src="/assets/images/index/recommend-2.png" class="card-img h-100" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                      <h5 class="fs-lg-2 mb-2">峇里島渡假漫遊</h5>
+                      <p class="fs-9 fs-lg-8 mb-8">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                      <button type="button" class="btn btn-light cta p-7 rounded-pill d-flex justify-content-between d-lg-flex">訂購行程<span class="material-icons-outlined align-bottom ms-2"> arrow_forward</span></button>
+                  </div>
+              </div>
+            <div class="card bg-dark text-white rounded-6 overflow-hidden flex-shrink-0 flex-lg-shrink-1">
+                <img src="/assets/images/index/recommend-3.png" class="card-img h-100" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                      <h5 class="fs-lg-2 mb-2">峇里島渡假漫遊</h5>
+                      <p class="fs-9 fs-lg-8 mb-8">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                      <button type="button" class="btn btn-light cta p-7 rounded-pill d-flex justify-content-between">訂購行程<span class="material-icons-outlined align-bottom ms-2"> arrow_forward</span></button>
+                  </div>
+              </div>
+          </div>
+          
+
+
+        </section>
+        <!-- 踏上旅程第一站 -->
+         <section class="container py-11">
+          <div class="row flex-lg-row-reverse justify-content-between align-items-lg-center">
+            <div class="col-lg-4 mb-11 mb-lg-0 d-flex justify-content-lg-end">
+              <div>
+                <h4 class="text-primary fs-lg-1 mb-8">ZOBAA!<br>踏上旅程的<br>第一站</h4>
+                <p class="text-primary-60">
+                  探索最熱門的旅遊主題，<br>從旅人必備攻略到獨家優惠，<br>全都為你精挑細選。
+                </p>
+
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card overflow-hidden rounded-3 rounded-lg-5 border-1 mb-6 mb-lg-7">
+                    <img src="/assets/images/index/intro-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="fs-7">ZOBAA 專屬推薦行程嚴選深度行程</h4>
+                      <p>豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card overflow-hidden rounded-3 rounded-lg-5 border-1 mb-6 mb-lg-7">
+                    <img src="/assets/images/index/intro-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="fs-7">ZOBAA 專屬推薦行程嚴選深度行程</h4>
+                      <p>豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row offset-row">
+                <div class="col-lg-6">
+                  <div class="card overflow-hidden rounded-3 rounded-lg-5 border-1 mb-6 mb-lg-7">
+                    <img src="/assets/images/index/intro-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="fs-7">ZOBAA 專屬推薦行程嚴選深度行程</h4>
+                      <p>豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card overflow-hidden rounded-3 rounded-lg-5 border-1 mb-6 mb-lg-7">
+                    <img src="/assets/images/index/intro-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="fs-7">ZOBAA 專屬推薦行程嚴選深度行程</h4>
+                      <p>豐富旅行靈感</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         </section>
+         <!-- 靈感地圖 -->
+      </main>
 
     <%- include('./layout/footer'); -%>
 

@@ -8,7 +8,7 @@ import liveReload from 'vite-plugin-live-reload';
 
 function moveOutputPlugin() {
   return {
-    name: 'move-output',
+    name: 'Class8-follow-teacher-homework',
     enforce: 'post',
     apply: 'build',
     async generateBundle(options, bundle) {

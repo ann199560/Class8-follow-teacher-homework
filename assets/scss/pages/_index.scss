@@ -1,3 +1,50 @@
-.index-title {
-  font-size: 100px;
+.banner{
+  background-image: url(/assets/images/index/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  min-height: 100vh;
+  padding-top: 124px;
+}
+
+.recommend{
+  background-color: #221F1E;
+
+  .card{
+    width: 277px;
+  }
+}
+
+
+
+@media (min-width:992px){
+  .recommend .card {
+    width: 25%;
+    max-width: 416px;
+    height: 600px;
+    transition: width 1s;
+    
+    button{
+      opacity: 0%;
+    }
+
+    &:hover{
+      width: 100%;
+
+      button{
+      opacity: 100%;
+      }
+
+    }
+    
+  }
+  
+}
+
+@media(min-width:992px){
+  .offset-row{
+    // Ｘ軸偏移 80 px
+    transform: translateX(80px);
+  }
 }

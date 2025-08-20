@@ -1,0 +1,184 @@
+
+$utilities: (
+
+  "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+      responsive: true
+    ),
+
+
+    "border": (
+      property: border,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+        1: 1px solid $border-color,
+        2: 2px solid $border-color,
+      ),
+      responsive: true
+    ),
+
+    "border-top": (
+      property: border-top,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+        1: 1px solid $border-color,
+        2: 2px solid $border-color,
+      ),
+      responsive: true
+    ),
+
+    "border-end": (
+      property: border-right,
+      class: border-end,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+        1: 1px solid $border-color,
+        2: 2px solid $border-color,
+      ),
+      responsive: true
+    ),
+
+    "border-bottom": (
+      property: border-bottom,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+        1: 1px solid $border-color,
+        2: 2px solid $border-color,
+      ),
+      responsive: true
+    ),
+
+    "border-start": (
+      property: border-left,
+      class: border-start,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+        1: 1px solid $border-color,
+        2: 2px solid $border-color,
+      ),
+      responsive: true
+    ),
+
+
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: .5rem,
+        2: .75rem,
+        3: 1rem,
+        4: 1.25rem,
+        5: 1.5rem,
+        6: 2rem,
+        7: 2.5rem,
+        circle: 50%,
+        pill: $border-radius-pill,
+      ),
+      responsive: true
+    ),
+
+
+    "rounded-top": (
+      property: border-top-left-radius border-top-right-radius,
+      class: rounded-top,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: .5rem,
+        2: .75rem,
+        3: 1rem,
+        4: 1.25rem,
+        5: 1.5rem,
+        6: 2rem,
+        7: 2.5rem,
+        ),
+      responsive: true
+    ),
+
+    "rounded-end": (
+      property: border-top-right-radius border-bottom-right-radius,
+      class: rounded-end,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: .5rem,
+        2: .75rem,
+        3: 1rem,
+        4: 1.25rem,
+        5: 1.5rem,
+        6: 2rem,
+        7: 2.5rem,
+        ),
+      responsive: true
+    ),
+
+    "rounded-bottom": (
+      property: border-bottom-right-radius border-bottom-left-radius,
+      class: rounded-bottom,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: .5rem,
+        2: .75rem,
+        3: 1rem,
+        4: 1.25rem,
+        5: 1.5rem,
+        6: 2rem,
+        7: 2.5rem,
+        ),
+      responsive: true
+    ),
+
+    "rounded-start": (
+      property: border-bottom-left-radius border-top-left-radius,
+      class: rounded-start,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: .5rem,
+        2: .75rem,
+        3: 1rem,
+        4: 1.25rem,
+        5: 1.5rem,
+        6: 2rem,
+        7: 2.5rem,
+      ),
+      responsive: true
+    ),
+    
+    "shadow": (
+      property: box-shadow,
+      class: shadow,
+      values: (
+        null: $box-shadow,
+        1: $box-shadow-sm,
+        2: $box-shadow-lg,
+        none: none,
+      ),
+      responsive: true
+    ),
+
+
+
+  );
+
+
+  $utilities-bg: map-merge(
+  $utilities-colors,
+  (
+    "black": to-rgb($black),
+    "white": to-rgb($white),
+    "body": to-rgb($body-bg)
+  )
+);
+$utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg");
