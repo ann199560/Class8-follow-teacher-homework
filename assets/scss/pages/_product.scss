@@ -1,0 +1,39 @@
+.air-datepicker-body--day-name{
+    color: $neutral-80;
+}
+
+.air-datepicker-cell.-selected-{
+    background: $primary-10;
+    color: $black;
+}
+
+.air-datepicker-cell.-selected-.-focus-{
+    background: $primary-10;
+}
+
+.air-datepicker-cell.-selected-.-current- {
+    background: $primary-10;
+    color: $black;
+}
+
+.air-datepicker-cell.-current-{
+    background: $primary-10;
+    color: $black;
+}
+
+.air-datepicker-cell.-current-.-focus-{
+    background: $primary-10;
+}
+
+.air-datepicker-cell.-disabled-{
+    text-decoration: line-through;
+}
+
+.air-datepicker-nav--title{
+    order: -1;
+    margin-right: auto;
+}
+
+.air-datepicker{
+    width: 100%;
+}

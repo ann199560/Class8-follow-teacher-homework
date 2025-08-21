@@ -3,9 +3,14 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
   min-height: 100vh;
   padding-top: 124px;
+
+  @media (min-width:992px){
+    .banner{
+    padding-top: 288px;
+    }
+  }
 }
 
 .recommend{
@@ -14,12 +19,8 @@
   .card{
     width: 277px;
   }
-}
-
-
-
-@media (min-width:992px){
-  .recommend .card {
+  @media (min-width:992px){
+    .recommend .card {
     width: 25%;
     max-width: 416px;
     height: 600px;
@@ -27,7 +28,7 @@
     
     button{
       opacity: 0%;
-    }
+      }
 
     &:hover{
       width: 100%;
@@ -36,15 +37,63 @@
       opacity: 100%;
       }
 
-    }
+      }
     
+    }
   }
-  
 }
 
-@media(min-width:992px){
-  .offset-row{
+.zobaa-tag{
+  transform: translate(-40px,-64px);
+}
+
+.offset-row{
+    @media (min-width:992px){
     // Ｘ軸偏移 80 px
     transform: translateX(80px);
+    }
   }
+
+  .tab-btn-bg{
+    .nav-link{
+    background-color: $white;
+    }
 }
+
+.img-container {
+  height: 200px; /* 根據實際卡片比例可調整 */
+  width: auto;
+    @media (min-width: 992px){
+      width: 300px;
+      height: auto; 
+    }
+}
+
+.number{
+  top: -40px;
+  left: 16px;
+}
+
+.journey-img-container {
+  height: 212px; /* 根據實際卡片比例可調整 */
+  width: auto;
+}
+
+.star{
+  color: #F6BD2B;
+}
+
+ .love{
+  top: 16px;
+  right: 16px;
+  color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+      border: 0;
+      outline: none;
+      box-shadow: none;        // 拿掉 Bootstrap 的外框陰影
+  }
+ }
+  
+  
