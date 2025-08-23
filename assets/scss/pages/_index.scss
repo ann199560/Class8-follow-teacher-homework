@@ -1,15 +1,19 @@
-.banner{
+.banner {
   background-image: url(/assets/images/index/hero-bg.png);
-  background-position: center;
+  background-position: center center;
+  
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   padding-top: 124px;
 
-  @media (min-width:992px){
-    .banner{
-    padding-top: 288px;
-    }
+  @media (min-width: 992px) {
+    padding-top: 300px;
+    background-position: center center; // 桌機正常置中
+  }
+
+  @media (max-width: 991.98px) {
+    background-position: 75% center; // ⭐️⭐️ 調整圖片焦點偏右
   }
 }
 
@@ -18,16 +22,16 @@
 
   .card{
     width: 277px;
-  }
+ 
   @media (min-width:992px){
-    .recommend .card {
+    
     width: 25%;
     max-width: 416px;
     height: 600px;
     transition: width 1s;
     
     button{
-      opacity: 0%;
+      opacity: 0;
       }
 
     &:hover{
@@ -38,13 +42,23 @@
       }
 
       }
-    
+ 
     }
   }
 }
 
 .zobaa-tag{
-  transform: translate(-40px,-64px);
+  top: -45px;
+  left: 133px;
+  max-width: 130px;
+  height: auto;
+    @media (min-width:992px){
+      max-width: 172px;
+      height: auto;
+      left: 320px;
+    
+    }
+  
 }
 
 .offset-row{
@@ -64,36 +78,186 @@
   height: 200px; /* 根據實際卡片比例可調整 */
   width: auto;
     @media (min-width: 992px){
-      width: 300px;
+      max-width: 300px;
       height: auto; 
     }
 }
 
 .number{
   top: -40px;
-  left: 16px;
+  left: 30px;
+  max-width: none;
+  width: 50px;
+  
 }
 
 .journey-img-container {
-  height: 212px; /* 根據實際卡片比例可調整 */
-  width: auto;
+  max-height: 212px; /* 根據實際卡片比例可調整 */
+  max-width: 306px;
+}
+
+.journey-info{
+  max-width: 306px;
 }
 
 .star{
   color: #F6BD2B;
 }
 
- .love{
-  top: 16px;
-  right: 16px;
+.love{
+  top: 0px;
+  right: 0px;
   color: $white;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 20px;
+  backdrop-filter: blur(12px);
+  
+  background: rgba($color: #000000, $alpha: 0.4);
     &:hover,
     &:active,
     &:focus {
-      border: 0;
-      outline: none;
-      box-shadow: none;        // 拿掉 Bootstrap 的外框陰影
+      color: $white;
+      background: $black;
+            // 拿掉 Bootstrap 的外框陰影
   }
  }
+
+.marquee{
+  overflow: hidden;
+    p{
+      font-family: "Poppins";
+      font-size: 32px;
+      white-space: nowrap;
+      
+      animation-name: marquee;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+        @keyframes marquee {
+        from {
+          transform: translateX(-25%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+      @media (min-width:992px){
+      font-size: 130px;
+    
+      }
+    }
   
+}
+
+.zobaa-img-container{
+  height: 240px;
+  width: auto;
+    @media (min-width:992px){
+      height: 600px;
+    }
   
+}
+  
+.zobaa-text{
+  font-size: 32px;
+  left: 24px;
+  bottom: 100px;
+  opacity: 0.32;
+  line-height: 1.2;
+    @media (min-width:992px){
+      font-size: 150px;
+    }
+}
+
+ .zobaa-life-text{
+  font-size: 32px;
+  left: 24px;
+  bottom: 24px;
+  line-height: 1.2;
+  opacity: 0.6;
+    @media (min-width:992px){
+        font-size: 72px;
+      }
+}
+ 
+ .zobaa-why-bg{
+  background-color: rgba($color: $primary-10, $alpha: 0.5);
+}
+
+// .bg-up{
+//   display: none;
+//     @media (min-width:992px){
+//           display: flex;
+//           top: -360px;
+//           left: -240px;
+//         }
+// }
+
+.bg-line{
+      bottom: 295px;
+      left: -97px;
+      max-width: none;
+}
+
+.bg-down{
+      display: flex;
+      bottom: -500px;
+      right: 50px;
+}
+
+// .why-zobaa-btn{
+//   padding: 16px 20px;
+//    @media (min-width:992px){
+//       padding: 28px 32px;
+//     }
+// }
+
+.bg-icon{
+  color: $primary-10;
+
+}
+
+.hashtag{
+  font-family: "Poppins";
+  font-size: 52px;
+  top: -32px;
+  left: -8px;
+    @media (min-width:992px){
+        font-size: 120px;
+        top: -70px;
+        left: -30px;
+      }
+}
+
+
+.slider-bg{
+  background-color: $primary-10;
+  height: 40px;
+  clip-path: polygon(0 100%, 100% calc(100% - 40px), 100% 100%, 0 100%);
+}
+
+.slider-bg2{
+  background-color: $primary-10;
+  height: 40px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 0 100%);
+}
+
+.deco-bg{
+  transform: rotate(-5deg);
+  top: 150px;
+  left: -10px;
+  max-width: none;
+  width: 2000px;
+}
+
+.deco-txt{
+  left: 80px;
+  bottom: 360px;
+}
+
+.search-bar{
+  max-width: 720px;
+}
