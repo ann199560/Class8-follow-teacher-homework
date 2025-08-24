@@ -1,93 +1,131 @@
 <nav class="navbar bg-white py-4 py-lg-6 fixed-top">
   <div class="container position-relative">
     <div class="d-flex align-items-center me-auto">
-        <a class="navbar-brand p-0 me-8" href="/pages/index.html">
-            <img src="/assets/images/LOGO.svg" alt="">
-    
-        </a>
-        <form class="position-relative d-none d-lg-block">
-            <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">
-                search
-            </span>
-            <input type="search" class="form-control rounded-1 py-2 ps-11 pe-16" id="navbar-lg-search" placeholder="搜尋景點、地點或城市">
-          </form>
-
-        </div>
+      <a class="navbar-brand p-0 me-8" href="/pages/index.html">
+        <img src="/assets/images/LOGO.svg" alt="" />
+      </a>
+      <form class="position-relative d-none d-lg-block">
+        <span
+          class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+        >
+          search
+        </span>
+        <input
+          type="search"
+          class="form-control rounded-1 py-2 ps-11 pe-16"
+          id="navbar-lg-search"
+          placeholder="搜尋景點、地點或城市"
+        />
+      </form>
+    </div>
 
     <div class="position-absolute start-0 end-0 px-4 z-1 bg-white">
-        <div class="collapse" id="collapseExample">
-            <div class="d-flex align-items-center">
-                <form class="position-relative w-100">
-                    <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">
-                        search
-                    </span>
-                    <input type="search" class="form-control rounded-1 py-2 ps-11 pe-16" id="exampleFormControlInput1" placeholder="搜尋景點、地點或城市">
-                </form>
-                <button type="button" class="btn p-2 border-0" data-bs-toggle="collapse" data-bs-target="#collapseExample">
-                    <span class="material-icons-outlined align-bottom">
-                        close
-                    </span>  
-                </button>        
-    
-            </div>
-            </div>
+      <div class="collapse" id="collapseExample">
+        <div class="d-flex align-items-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
+            >
+              search
+            </span>
+            <input
+              type="search"
+              class="form-control rounded-1 py-2 ps-11 pe-16"
+              id="exampleFormControlInput1"
+              placeholder="搜尋景點、地點或城市"
+            />
+          </form>
+          <button
+            type="button"
+            class="btn p-2 border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+          >
+            <span class="material-icons-outlined align-bottom"> close </span>
+          </button>
+        </div>
+      </div>
     </div>
 
-    <button type="button" class="btn p-2 border-0 d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseExample">
-        <span class="material-icons-outlined align-bottom">
-            search
-        </span>
-    </button>
+    <button
+      type="button"
+      class="btn p-2 border-0 d-lg-none"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseExample"
+    >
+      <span class="material-icons-outlined align-bottom"> search </span>
+        </button>
 
     <a href="#" class="btn border-0 py-3 px-5">
-    <span class="position-relative">
+      <span class="position-relative">
         <span class="material-icons-outlined align-bottom">
-                  shopping_cart 
-            </span>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert cart-target p-0">
-            2
-        <span class="visually-hidden">unread messages</span>
-            </span>
+          shopping_cart
         </span>
-    
-</a>
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-alert cart-target p-0"
+        >
+          2
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </span>
+    </a>
 
-    <button class="btn border-0 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-
+    <button
+      class="btn border-0 p-2"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
       <span class="material-icons-outlined align-bottom">menu</span>
-      </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
       <div class="offcanvas-header">
-        
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-        <div class="container h-100">
-                <div class="d-flex flex-column justify-content-between h-100 px-7 pb-7">
-                    <div class="d-flex align-items-center border-bottom pb-6 mb-8">
-                        <img src="/assets/images/Frame 1000004652.svg" class="me-2" style="height: 32px; width: 32px;" alt="">
-                        <div>
-                            <p class="fs-8 fw-bold text-primary">訪客</p>
-                            <p class="fs-8 text-netral-40">未登入</p>
-                        </div>
-                      </div>
-                    <div class="">
-                        <p class="fs-7 text-primary fw-bold mb-1">
-                            歡迎來到 ZOBAA
-                        </p>
-                        <span class="fs-8 fw-normal text-netral-80">
-                            加入會員即可立即訂購、收藏行程，並<br>
-                            享相關優惠好禮。
-                        </span>
-                    </div>
-                    <a href="#"
-                        class="mt-auto btn bg-primary-100 text-white fw-semibold fs-8 px-8 py-5 border-0 rounded-2"
-                        type="button">
-                        登入 / 註冊
-                    </a>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        </div>
+      <div class="container h-100">
+        <div class="d-flex flex-column justify-content-between h-100 px-8 pb-8">
+            <!-- 訪客標題 -->
+          <div class="d-flex align-items-center border-bottom pb-7 mb-10">
+            <img
+              src="/assets/images/Frame 1000004652.svg"
+              class="me-2"
+              style="height: 32px; width: 32px"
+              alt=""
+            />
+            <div>
+              <p class="fs-8 fw-bold text-primary">訪客</p>
+              <p class="fs-8 text-netral-40">未登入</p>
                 </div>
             </div>
-
-
-      </div>
-    </div>
+            <!-- 歡迎內文 -->
+          <div class="pt-8">
+            <p class="fs-7 text-primary fw-bold mb-1">歡迎來到 ZOBAA</p>
+            <span class="fs-8 fw-normal text-netral-80">
+              加入會員即可立即訂購、收藏行程，並<br />
+              享相關優惠好禮。
+            </span>
+            </div>
+            <!-- 登入註冊按鈕 -->
+          <a
+            href="#"
+            class="mt-auto btn bg-primary text-white fw-semibold fs-8 py-6 border-0 rounded-2 w-100"
+            type="button"
+          >
+            登入 / 註冊
+            </a>
+            </div>
+        </div>
+        </div>
+  </div>
 </nav>

@@ -1,54 +1,54 @@
 // 標籤基本樣式
 
-body{
-    letter-spacing: 0.02em;
+body {
+  letter-spacing: 0.02em;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-a{
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
-.neutral-60{
+.neutral-60 {
   color: $neutral-60;
 }
 
-.fixed-pt{
-    padding-top: 124px;
+.fixed-pt {
+  padding-top: 124px;
 }
 
-.btn-pd-4-8{
-    padding: 4px 8px;
+.btn-pd-4-8 {
+  padding: 4px 8px;
 }
 
-.btn-pd-8-16{
-    padding: 8px 16px;  
+.btn-pd-8-16 {
+  padding: 8px 16px;
 }
 
-.btn-pd-12-16{
-    padding: 12px 16px;
+.btn-pd-12-16 {
+  padding: 12px 16px;
 }
 
-.btn-pd-16-20{
-    padding: 16px 20px;
+.btn-pd-16-20 {
+  padding: 16px 20px;
 }
 
-.btn-pd-16-24{
-    padding: 16px 24px;
+.btn-pd-16-24 {
+  padding: 16px 24px;
 }
 
-.btn-pd-28-32{
-    padding: 28px 32px;
+.btn-pd-28-32 {
+  padding: 28px 32px;
 }
 
-.btn-pd-16-32{
-    padding: 16px 32px;
+.btn-pd-16-32 {
+  padding: 16px 32px;
 }
 
 // .btn-pd-16-100{
