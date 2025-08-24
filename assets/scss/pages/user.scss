@@ -1,0 +1,89 @@
+
+
+.user-bg{
+    padding-top: 108px;
+    background-color: $neutral-15;
+}
+
+.deco-bg-user{
+    display: none;
+        @media (min-width: 992px) {
+            display: flex;
+            background: url(/assets/images/index/deco-bg.svg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+  }
+}
+
+.hero{
+    background: url(/assets/images/login/cover-1.png);
+}
+
+.hero-img{
+    height: 200px;
+    background: url(/assets/images/user/hero.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+      @media (min-width: 992px) {
+              height: 400px;       
+    }
+}
+
+.user-name-photo{
+    transform: translateY(-50%);
+
+}
+
+.user-admin{
+        transform: translateY(-110%);
+        
+     @media (min-width: 992px) {
+        transform: translateY(-100%);
+    }
+}
+
+.user-photo{
+    max-width: 120px;
+    
+}
+
+.user-photo-pen{
+    right: 0;
+    bottom: 0;
+}
+
+.user-admin .nav-item {
+  white-space: nowrap;  /* 按鈕文字不換行 */
+}
+
+.hero-text{
+    right: 32px;
+    bottom: 32px;
+}
+
+.edit{
+    width: 100%;
+    @media (min-width: 992px) {
+        width: 15%;
+    }
+}
+
+
+.admin-form {
+    &:hover {
+        background: $primary-10;
+        button {
+            @media (min-width: 992px) {
+                display: block;
+            }
+        }
+    }
+    button {
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>user</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <main class="user-bg pb-11 px-4 position-relative overflow-hidden">
+      <img src="/assets/images/index/deco-bg.svg" alt="" class="position-absolute d-none d-lg-flex">
+      <div class="container">
+
+     
+      <!-- 飛機＋頭像 -->
+      <div class="user-hero mb-11">
+        <!-- 飛機＋更換背景圖區 -->
+        <div class="hero-img w-100 rounded-5 d-flex position-relative">
+          <a href="#" class="hero-text text-white d-none d-lg-block position-absolute ">
+            <img src="/assets/images/Edit Icon.svg" alt="" style="max-width: 24px;" class="me-2 align-bottom">
+            更換封面
+            </a>
+          </div>
+        <!-- 頭像區 -->
+        <div class="user-name-photo text-center">
+          <div class="user-photo mb-2 position-relative mx-auto">
+            <img src="/assets/images/user/Ellipse 87.svg" alt="" class="">
+            <span class="user-photo-pen badge rounded-circle bg-primary p-2 position-absolute">
+              <span class="material-icons-outlined">create</span>
+            </span>
+            </div>
+          <div class="user-name">
+            <h6 class="fs-7 fw-bold mb-1">Jessica Yen</h6>
+            <p class="fs-9">jessica.yen@gmail.com</p>
+            </div>
+              
+          </div>
+        
+        </div>
+      
+      <!-- 帳號管理 -->
+       
+     
+      <ul class="user-admin shadow-lg nav bg-white rounded-3 rounded-lg-5 py-5 px-4 justify-content-center justify-content-lg-start flex-nowrap" id="pills-tab" role="tablist">
+                 <li class="nav-item border-0 p-0 col-lg-4 border-end" role="presentation">
+                   <button class="nav-link active fw-bold fs-8 py-4 px-8" id="pills-admin-tab" data-bs-toggle="pill" data-bs-target="#pills-admin" type="button" role="tab" aria-controls="pills-admin" aria-selected="true">
+                    我的帳號
+                    </button>
+                    </li>
+                 <li class="nav-item border-0 p-0 col-lg-4 border-end" role="presentation">
+                   <button class="nav-link fw-bold fs-8 py-4 px-8" id="pills-management-tab" data-bs-toggle="pill" data-bs-target="#pills-management" type="button" role="tab" aria-controls="pills-management" aria-selected="false">
+                    訂單管理
+                    </button>
+                    </li>
+                 <li class="nav-item border-0 p-0 col-lg-4" role="presentation">
+                   <button class="nav-link fw-bold fs-8 py-4 px-8" id="pills-favorite-tab" data-bs-toggle="pill" data-bs-target="#pills-favorite" type="button" role="tab" aria-controls="pills-favorite" aria-selected="false">
+                    我的收藏
+                    </button>
+                  </li>  
+        </ul>
+            
+      <div class="tab-content rounded-3 bg-white pt-10 pb-6 px-6 shadow-lg" id="pills-tabContent">
+  <!-- 帳號內容 -->
+<div class="tab-pane fade show active" id="pills-admin" role="tabpanel" aria-labelledby="pills-admin-tab" tabindex="0">
+  <form>
+    
+    <div>
+        <h4 class="fs-lg-2 fw-bold mb-lg-6 mb-11">我的帳號</h4>
+
+        <!-- 個人資訊＋常用旅客頁籤 -->
+        <ul class="nav border-bottom mb-8" id="pills-tab" role="tablist">
+                 <li class="nav-item me-10 border-0" role="presentation">
+                   <button class="nav-link active fw-bold fs-8 py-6 px-0" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-info" aria-selected="true">
+                    個人資訊
+                    </button>
+                    </li>
+                 <li class="nav-item border-0" role="presentation">
+                   <button class="nav-link fw-bold fs-8 py-6 px-0" id="pills-traver-tab" data-bs-toggle="pill" data-bs-target="#pills-traver" type="button" role="tab" aria-controls="pills-traver" aria-selected="false">
+                    常用旅客
+                    </button>
+                    </li> 
+          </ul>
+
+        
+        <div class="tab-content" id="pills-tabContent">
+          <!-- 個人資訊內容 -->
+          <div class="admin-info tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab" tabindex="0">
+            <form>
+              <div class="mb-11">
+                <div class="name mb-8">
+                  <h6 class="text-neutral-80 fw-normal fs-9 mb-2">
+                    姓名
+                  </h6>
+                  <p class="fw-bold">
+                    Jessica Yen
+                    </p>
+                  </div>
+                <div class="email mb-8">
+                  <h6 class="text-neutral-80 fw-normal fs-9 mb-2">
+                    電子信箱
+                  </h6>
+                  <p class="fw-bold">
+                    jessica.yen@gmail.com
+                    </p>
+                  </div>
+                <div class="password mb-8">
+                  <h6 class="text-neutral-80 fw-normal fs-9 mb-2">
+                   密碼
+                  </h6>
+                  <p class="fw-bold">
+                    ************
+                    </p>
+                  </div>
+                <div class="tel mb-8">
+                  <h6 class="text-neutral-80 fw-normal fs-9 mb-2">
+                   聯絡電話
+                  </h6>
+                  <p class="fw-bold">
+                    +886 912-345-678
+                    </p>
+                  </div>
+                <div class="add mb-8">
+                  <h6 class="text-neutral-80 fw-normal fs-9 mb-2">
+                   地址
+                  </h6>
+                  <p class="fw-bold">
+                    台北市士林區幸福路193號5樓之1
+                    </p>
+                  </div>
+                <div class="bth mb-8">
+                  <h6 class="text-neutral-80 fw-normal fs-9 mb-2">
+                   生日
+                  </h6>
+                  <p class="fw-bold">
+                    1995-09-20
+                    </p>
+                  </div>
+
+                </div>
+              <div class="d-lg-flex justify-content-end">
+                <button type="button" class="edit btn text-primary fw-bold bg-white border-primary py-6 rounded-2">
+                  <img src="/assets/images/ic_Edit.svg" alt="" class="align-bottom">
+                  編輯資訊
+                </button>
+                  </div>
+                </form>
+            </div>
+
+          <!-- 常用旅客內容 -->
+          <div class="tab-pane fade" id="pills-traver" role="tabpanel" aria-labelledby="pills-traver-tab" tabindex="0">
+            <form class="traver">
+              <div class="mb-11">
+                <div class="admin-form border-1 rounded-4 p-6 mb-8 d-lg-flex justify-content-between">
+                  <div class="d-flex align-items-center mb-6 mb-lg-0">
+                    <img src="/assets/images/user/Ellipse 87.svg" alt="" style="max-width: 40px;" class="me-2">
+                    <p class="fw-bold">
+                      Jessica Yen
+                      </p>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn text-primary fw-bold bg-white border-primary btn-pd-16-32 rounded-2">
+                        <img src="/assets/images/ic_Edit.svg" alt="" class="align-bottom">
+                        編輯資訊
+                        </button>
+                      <button type="button" class="btn text-primary fw-bold bg-white border-primary btn-pd-16-32 rounded-2">
+                        <img src="/assets/images/ic_close.svg" alt="" class="align-bottom">
+                        刪除
+                        </button>
+
+                      </div>
+                  </div>
+                <div class="admin-form border-1 rounded-4 p-6 mb-8 d-lg-flex justify-content-between">
+                  <div class="d-flex align-items-center mb-6">
+                    <img src="/assets/images/user/Ellipse 87拷貝.svg" alt="" style="max-width: 40px;" class="me-2">
+                    <div>
+                      <p class="fw-bold mb-lg-2">
+                        Jenny Lin
+                        </p>
+                        <p class="text-primary-100 d-none d-lg-block mb-lg-1">
+                            <span class="material-icons-outlined align-bottom me-2">
+                              cake
+                            </span>
+                            Jenny.Linnn@gmail.com
+                          </p>
+                          <p class="text-primary-100 d-none d-lg-block">
+                            <span class="material-icons-outlined align-bottom me-2">
+                              mail
+                            </span>
+                            2001.01.30
+                          </p>
+
+                      </div>
+
+                    </div>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn text-primary fw-bold bg-white border-primary btn-pd-16-32 rounded-2">
+                        <img src="/assets/images/ic_Edit.svg" alt="" class="align-bottom">
+                        編輯資訊
+                        </button>
+                      <button type="button" class="btn text-primary fw-bold bg-white border-primary btn-pd-16-32 rounded-2">
+                        <img src="/assets/images/ic_close.svg" alt="" class="align-bottom">
+                        刪除
+                        </button>
+
+                      </div>
+                  </div>
+                
+                </div>
+                <div class="d-lg-flex justify-content-end">
+                  <button type="button" class="edit btn text-primary fw-bold bg-white border-primary py-6 rounded-2">
+                  <img src="/assets/images/ic_plus.svg" alt="" class="align-bottom">
+                  新增常用旅客
+                    </button>
+
+                  </div>
+              </form>
+            </div>
+
+          </div>  
+
+      </div>
+    </form>
+  </div>
+
+  <!-- 訂單管理內容 -->
+<div class="tab-pane fade" id="pills-management" role="tabpanel" aria-labelledby="pills-management-tab" tabindex="0">
+</div>
+   
+  <!-- 收藏內容 -->
+<div class="tab-pane fade" id="pills-favorite" role="tabpanel" aria-labelledby="pills-favorite-tab" tabindex="0">
+  
+        </div>
+        
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
