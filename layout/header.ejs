@@ -1,13 +1,14 @@
-<nav class="navbar bg-white py-4 py-lg-6 fixed-top">
-  <div class="container position-relative">
+<nav class="navbar py-4 py-lg-6 fixed-top z-3 w-100">
+  <!-- 不影響漢堡選單的背景顏色 -->
+  <div class="navbar-bg position-absolute top-0 start-0 w-100 h-100 z-0 border-0"></div>
+  <div class="container position-relative z-1">
     <div class="d-flex align-items-center me-auto">
       <a class="navbar-brand p-0 me-8" href="/pages/index.html">
         <img src="/assets/images/LOGO.svg" alt="" />
       </a>
       <form class="position-relative d-none d-lg-block">
         <span
-          class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60"
-        >
+          class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">
           search
         </span>
         <input
@@ -68,7 +69,7 @@
           <span class="visually-hidden">unread messages</span>
         </span>
       </span>
-    </a>
+      </a>
 
     <button
       class="btn border-0 p-2"
