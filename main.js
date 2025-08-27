@@ -2,7 +2,7 @@ import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 
- const swiper = new Swiper('.map-swiper ', {
+ const mapSwiper = new Swiper('.map-swiper ', {
 
    // 分頁、左右箭頭、滾動條若有使用則必需設定          
    // 分頁
@@ -43,6 +43,29 @@ const recommendSwiper = new Swiper('.recommend-swiper', {
     clickable: true
     },
     grabCursor: true,
+ });
+
+
+
+ // 專屬推薦：自定義 swiper，不影響其他區塊
+const journeySwiper = new Swiper('.journey-swiper', {
+
+   // 分頁、左右箭頭、滾動條若有使用則必需設定          
+   // 分頁
+    loop: true,       
+    slidesPerView: "auto",         
+    spaceBetween: 24,
+    pagination: {
+    el: '.journey-pagination',
+    type: 'bullets',
+    clickable: true
+    },
+    navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+    },
+    grabCursor: true, 
+
  });
 
 

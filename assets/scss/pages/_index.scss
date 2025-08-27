@@ -127,7 +127,7 @@
     }
 }
 
-.swiper-slide{
+.map-swiper .swiper-slide{
   max-width: 312px;
     @media (min-width: 992px) {
     max-width: 746px;
@@ -163,8 +163,18 @@
   max-width: 306px;
 }
 
-.journey-info {
-  max-width: 306px;
+.journey-swiper .swiper-slide {
+    max-width: 306px;
+}
+
+.journey-prev{
+  left: -80px;
+  top: 210px;
+}
+
+.journey-next{
+  right: -80px;
+  top: 210px;
 }
 
 .star {
