@@ -23,7 +23,8 @@
   background-color: #221f1e;
 
   .card {
-    width: 277px;
+    max-width: 277px;
+    height: 400px;
 
     @media (min-width: 992px) {
       width: 25%;
@@ -45,6 +46,37 @@
     }
   }
 }
+
+.recommend-swiper{
+    padding-inline: 16px;
+    padding-bottom: 80px;
+    position: relative;
+
+}
+
+/* Swiper預設小圓點 */
+  .recommend-swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #cfcfcf;
+    /* 未選中顏色 */
+    opacity: 1;
+    /* 取消 Swiper 預設透明度 */
+    //margin: 0 6px !important;
+    /* 點與點間距 */
+    transition: all .2s ease;
+  }
+
+  /* Swiper目前頁 */
+  .recommend-swiper .swiper-pagination-bullet-active {
+    width: 24px;
+    height: 8px;
+    background: $primary-40;
+    /* 選中顏色 */
+    border-radius: 999px;
+    //transform: scale(1.25);
+    /* 微放大 */
+  }
 
 .zobaa-tag {
   top: -45px;

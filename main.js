@@ -2,7 +2,7 @@ import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 
- const swiper = new Swiper('.swiper', {
+ const swiper = new Swiper('.map-swiper ', {
 
    // 分頁、左右箭頭、滾動條若有使用則必需設定          
    // 分頁
@@ -27,3 +27,23 @@ import 'bootstrap/dist/js/bootstrap.min.js';
     }
    }
  });
+
+ 
+// 專屬推薦：自定義 swiper，不影響其他區塊
+const recommendSwiper = new Swiper('.recommend-swiper', {
+
+   // 分頁、左右箭頭、滾動條若有使用則必需設定          
+   // 分頁
+    loop: true,       
+    slidesPerView: 1.1,         // 手機先顯示 1.1 張，讓右側有「還有內容」的暗示
+    spaceBetween: 12,
+    pagination: {
+    el: '.recommend-pagination',
+    type: 'bullets',
+    clickable: true
+    },
+    grabCursor: true,
+ });
+
+
+ 
