@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,7 +172,7 @@
          <div class="slider-bg">
           </div>
         <!-- 靈感地圖 -->
-          <section class="bg-primary-10 pt-11 pb-16 px-6 py-lg-18">
+          <section class="map bg-primary-10 pt-11 pb-16 px-6 py-lg-18">
             <div class="container p-0">
               <div class="title-intro d-lg-flex align-items-center justify-content-between">
                 <div class="title-world-tab mb-lg-11">
@@ -196,7 +197,7 @@
                          <button class="nav-link btn-pd-8-16 fw-bold fs-8" id="pills-europe-tab" data-bs-toggle="pill" data-bs-target="#pills-europe-info" type="button" role="tab" aria-controls="pills-europe-info" aria-selected="false">歐洲</button>
                         </li>
                        <li class="nav-item flex-shrink-0" role="presentation">
-                         <button class="nav-link btn-pd-8-16 fw-bold fs-8" id="pills-oceania-tab" data-bs-toggle="pill" data-bs-target="#pills-oceania-info" type="button" role="tab" aria-controls="pills-oceania-info" aria-selected="false">美洲</button>
+                         <button class="nav-link btn-pd-8-16 fw-bold fs-8" id="pills-america-tab" data-bs-toggle="pill" data-bs-target="#pills-america-info" type="button" role="tab" aria-controls="pills-america-info" aria-selected="false">美洲</button>
                         </li>
                        <li class="nav-item flex-shrink-0" role="presentation">
                          <button class="nav-link btn-pd-8-16 fw-bold fs-8" id="pills-oceania-tab" data-bs-toggle="pill" data-bs-target="#pills-oceania-info" type="button" role="tab" aria-controls="pills-oceania-info" aria-selected="false">大洋洲</button>
@@ -458,6 +459,8 @@
                         
 
                           </div>
+
+                        </div>
                         
                         
 
@@ -469,6 +472,30 @@
 
  
           </section>
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+
+
+
         <!-- 斜邊容器2 -->
          <div class="slider-bg2">
           </div>
@@ -736,6 +763,7 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
   </body>
 </html>
