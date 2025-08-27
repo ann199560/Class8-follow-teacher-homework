@@ -64,7 +64,8 @@ const journeySwiper = new Swiper('.journey-swiper', {
     nextEl: '.swiper-btn-next',
     prevEl: '.swiper-btn-prev',
     },
-    grabCursor: true, 
+    grabCursor: true,
+ 
 
  });
 
