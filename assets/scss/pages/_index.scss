@@ -79,10 +79,18 @@
 }
 
 .number {
-  top: -40px;
-  left: 30px;
-  max-width: none;
-  width: 50px;
+  font-family: "Poppins";
+  color: #DFD2CD;
+  font-size: 100px;
+  font-style: italic;
+  top: -57px;
+  left: 16px;
+    @media (min-width: 992px) {
+      font-size: 200px;
+      top: -130px;
+      left: 25px;
+      
+    }
 }
 
 .journey-img-container {
@@ -250,3 +258,34 @@
 .search-bar {
   max-width: 720px;
 }
+
+.swiper-slide{
+  max-width: 312px;
+    @media (min-width: 992px) {
+    max-width: 746px;
+    }
+}
+
+/* Swiper預設小圓點 */
+  .swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #cfcfcf;
+    /* 未選中顏色 */
+    opacity: 1;
+    /* 取消 Swiper 預設透明度 */
+    //margin: 0 6px !important;
+    /* 點與點間距 */
+    transition: all .2s ease;
+  }
+
+  /* Swiper目前頁 */
+  .swiper .swiper-pagination-bullet-active {
+    width: 24px;
+    height: 8px;
+    background: $primary-100;
+    /* 選中顏色 */
+    border-radius: 999px;
+    //transform: scale(1.25);
+    /* 微放大 */
+  }
