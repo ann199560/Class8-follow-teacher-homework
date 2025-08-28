@@ -35,8 +35,9 @@ const recommendSwiper = new Swiper('.recommend-swiper', {
    // 分頁、左右箭頭、滾動條若有使用則必需設定          
    // 分頁
     loop: true,       
-    slidesPerView: 1.1,         // 手機先顯示 1.1 張，讓右側有「還有內容」的暗示
-    spaceBetween: 12,
+    slidesPerView: "auto",
+    slidesOffsetBefore: 12,
+    spaceBetween: 16,
     pagination: {
     el: '.recommend-pagination',
     type: 'bullets',
@@ -55,6 +56,7 @@ const journeySwiper = new Swiper('.journey-swiper', {
     loop: true,       
     slidesPerView: "auto",         
     spaceBetween: 24,
+    slidesOffsetBefore: 12,
     pagination: {
     el: '.journey-pagination',
     type: 'bullets',

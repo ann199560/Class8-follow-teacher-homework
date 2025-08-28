@@ -23,8 +23,10 @@
   background-color: #221f1e;
 
   .card {
-    max-width: 277px;
     height: 400px;
+    border-left: 1px solid rgba($color: #F5F7F9, $alpha: 0.2) ;
+    border-top: 1px solid rgba($color: #F5F7F9, $alpha: 0.2) ;
+    border-bottom: 1px solid rgba($color: #F5F7F9, $alpha: 0.2) ;
 
     @media (min-width: 992px) {
       width: 25%;
@@ -45,17 +47,19 @@
       }
     }
   }
+
+}
+
+.recommend .swiper-slide{
+  width: 277px;
 }
 
 .recommend-swiper{
-    padding-inline: 16px;
-    padding-bottom: 80px;
-    position: relative;
-
+  padding-bottom: 80px;
 }
 
 /* Swiper預設小圓點 */
-  .recommend-swiper .swiper-pagination-bullet {
+  .recommend .recommend-swiper .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
     background: #cfcfcf;
@@ -68,7 +72,7 @@
   }
 
   /* Swiper目前頁 */
-  .recommend-swiper .swiper-pagination-bullet-active {
+  .recommend .recommend-swiper .swiper-pagination-bullet-active {
     width: 24px;
     height: 8px;
     background: $primary-40;
